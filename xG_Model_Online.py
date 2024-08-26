@@ -3,70 +3,70 @@ import streamlit as st
 from joblib import load
 from urllib.error import HTTPError
 
-# Load your pre-trained model
-model = load("/Users/thomasfalzon/Desktop/csv_files/combined_model.joblib")
+# Load your pre-trained model from the current directory
+model = load("combined_model.joblib")
 
 # Define leagues with file paths and division codes
 league_info = {
     "Premier League": {
         "div_code": "E0",
-        "file": "/Users/thomasfalzon/Desktop/csv_files/League_Data/Premier_League_stats.csv"
+        "file": "League_Data/Premier_League_stats.csv"
     },
     "EFL Championship": {
         "div_code": "E1",
-        "file": "/Users/thomasfalzon/Desktop/csv_files/League_Data/Championship_stats.csv"
+        "file": "League_Data/Championship_stats.csv"
     },
     "La Liga": {
         "div_code": "SP1",
-        "file": "/Users/thomasfalzon/Desktop/csv_files/League_Data/La_Liga.csv"
+        "file": "League_Data/La_Liga.csv"
     },
     "Spanish Segunda Division": {
         "div_code": "SP2",
-        "file": "/Users/thomasfalzon/Desktop/csv_files/League_Data/Segunda_Division.csv"
+        "file": "League_Data/Segunda_Division.csv"
     },
     "Ligue 1": {
         "div_code": "F1",
-        "file": "/Users/thomasfalzon/Desktop/csv_files/League_Data/Ligue_1.csv"
+        "file": "League_Data/Ligue_1.csv"
     },
     "Ligue 2": {
         "div_code": "F2",
-        "file": "/Users/thomasfalzon/Desktop/csv_files/League_Data/Ligue_2.csv"
+        "file": "League_Data/Ligue_2.csv"
     },
     "Serie A": {
         "div_code": "I1",
-        "file": "/Users/thomasfalzon/Desktop/csv_files/League_Data/Serie_A.csv"
+        "file": "League_Data/Serie_A.csv"
     },
     "Serie B": {
         "div_code": "I2",
-        "file": "/Users/thomasfalzon/Desktop/csv_files/League_Data/Serie_B.csv"
+        "file": "League_Data/Serie_B.csv"
     },
     "Bundesliga": {
         "div_code": "D1",
-        "file": "/Users/thomasfalzon/Desktop/csv_files/League_Data/Bundesliga.csv"
+        "file": "League_Data/Bundesliga.csv"
     },
     "Bundesliga 2": {
         "div_code": "D2",
-        "file": "/Users/thomasfalzon/Desktop/csv_files/League_Data/Bundesliga_2.csv"
+        "file": "League_Data/Bundesliga_2.csv"
     },
     "Eredivisie": {
         "div_code": "N1",
-        "file": "/Users/thomasfalzon/Desktop/csv_files/League_Data/Eredivisie.csv"
+        "file": "League_Data/Eredivisie.csv"
     },
     "Belgian Pro League": {
         "div_code": "B1",
-        "file": "/Users/thomasfalzon/Desktop/csv_files/League_Data/Pro_League.csv"
+        "file": "League_Data/Pro_League.csv"
     },
     "Primeira Liga": {
         "div_code": "P1",
-        "file": "/Users/thomasfalzon/Desktop/csv_files/League_Data/Primeira_Liga.csv"
+        "file": "League_Data/Primeira_Liga.csv"
     },
     "Brazilian Serie A": {
         "div_code": "BSA",
-        "file": "/Users/thomasfalzon/Desktop/csv_files/League_Data/Brazilian_Serie_A.csv"
+        "file": "League_Data/Brazilian_Serie_A.csv"
     },
     "Argentine Primera División": {
         "div_code": "ARG",
-        "file": "/Users/thomasfalzon/Desktop/csv_files/League_Data/Primera_Division.csv"
+        "file": "League_Data/Primera_Division.csv"
     },
 }
 
